@@ -56,7 +56,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<jline.version>3.23.0</jline.version>
+		<jline.version>3.27.0</jline.version>
 		<sonar.organization>mastercard</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 		<!-- The health of the example project is not terribly interesting, and
@@ -89,7 +89,7 @@
 				<!-- testing -->
 				<groupId>org.junit</groupId>
 				<artifactId>junit-bom</artifactId>
-				<version>5.10.3</version>
+				<version>5.11.2</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -155,7 +155,7 @@
 				<!-- Logging support -->
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-simple</artifactId>
-				<version>2.0.13</version>
+				<version>2.0.16</version>
 			</dependency>
 
 		</dependencies>
@@ -169,14 +169,14 @@
 					<!-- junit5 support -->
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>3.3.1</version>
+					<version>3.5.1</version>
 				</plugin>
 
 				<plugin>
 					<!-- `mvn formatter:format` to apply the format -->
 					<groupId>net.revelc.code.formatter</groupId>
 					<artifactId>formatter-maven-plugin</artifactId>
-					<version>2.16.0</version>
+					<version>2.24.1</version>
 					<configuration>
 						<!-- This plugin only executes in the child modules, so we need to 
 							step one dir up and then back down to the format file. If we end up with 
@@ -198,7 +198,7 @@
 					<!-- `mvn sortpom:sort` to format the pom files -->
 					<groupId>com.github.ekryd.sortpom</groupId>
 					<artifactId>sortpom-maven-plugin</artifactId>
-					<version>3.0.1</version>
+					<version>3.4.1</version>
 					<configuration>
 						<lineSeparator>\n</lineSeparator>
 						<nrOfIndentSpace>-1</nrOfIndentSpace>
@@ -216,7 +216,7 @@
 					     a `mvn test-compile` invocation -->
 					<groupId>org.pitest</groupId>
 					<artifactId>pitest-maven</artifactId>
-					<version>1.16.1</version>
+					<version>1.17.0</version>
 					<configuration>
 						<timestampedReports>false</timestampedReports>
 						<exportLineCoverage>true</exportLineCoverage>
@@ -241,27 +241,27 @@
 					<!-- `mvn javadoc:javadoc` to generate target/site/apidocs in each module -->
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-javadoc-plugin</artifactId>
-					<version>3.8.0</version>
+					<version>3.10.1</version>
 				</plugin>
 
 				<plugin>
 					<!-- Building the report apps without tools installed -->
 					<groupId>com.github.eirslett</groupId>
 					<artifactId>frontend-maven-plugin</artifactId>
-					<version>1.15.0</version>
+					<version>1.15.1</version>
 				</plugin>
 
 				<plugin>
 					<!-- building the report apps with installed tools -->
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>exec-maven-plugin</artifactId>
-					<version>3.3.0</version>
+					<version>3.4.1</version>
 				</plugin>
 
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-deploy-plugin</artifactId>
-					<version>3.1.2</version>
+					<version>3.1.3</version>
 				</plugin>
 
 			</plugins>
@@ -487,7 +487,7 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-gpg-plugin</artifactId>
-						<version>3.2.4</version>
+						<version>3.2.7</version>
 						<executions>
 							<execution>
 								<id>sign-artifacts</id>
